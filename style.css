@@ -1,0 +1,26 @@
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f7e8e8; /* Soft pink background (Sweet) */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+#checklist-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.factor {
+    cursor: pointer;
+    padding: 10px 15px;
+    border-left: 5px solid #8b0000; /* Deep red accent (Sharp) */
+    margin-bottom: 8px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s;
+}
+.factor:hover {
+    background-color: #ffeaea; /* Soft hover effect */
+}
