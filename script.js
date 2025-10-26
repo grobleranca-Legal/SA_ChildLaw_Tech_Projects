@@ -7,3 +7,23 @@ const section7Data = {
 };
 
 // Next Week's Task: Adding the interactive code below this line.
+
+// Function to handle the click event and display the data
+const factorsList = document.getElementById('factors-list');
+
+factorsList.addEventListener('click', function(event) {
+    // Check if the clicked item is one of the factors
+    const clickedFactor = event.target.closest('.factor');
+    if (clickedFactor) {
+        // Get the unique ID from the data attribute
+        const factorId = clickedFactor.getAttribute('data-factor-id');
+        
+        // Retrieve the Custom Cupcake Context using the ID
+        const context = section7Data[factorId];
+
+        // Use a simple alert box to display the context (The Bot's pop-up!)
+        if (context) {
+            alert(`Section 7 Factor ${factorId}:\n\n${context}`);
+        }
+    }
+});
